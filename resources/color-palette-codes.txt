@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #13100b - rgb(19, 16, 11) - hsl(38, 27%, 6%)
+    Background: #f8f5f2 - rgb(248, 245, 242) - hsl(30, 30%, 96%)
+    Primary: #795c3e - rgb(121, 92, 62) - hsl(31, 32%, 36%)
+    Secondary: #c6cda6 - rgb(198, 205, 166) - hsl(71, 28%, 73%)
+    Accent: #a8bc88 - rgb(168, 188, 136) - hsl(83, 28%, 64%)
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=13100b-f8f5f2-795c3e-c6cda6-a8bc88&fonts=Poppins-Merriweather
+
+Thanks for using RealtimeColors.com!
