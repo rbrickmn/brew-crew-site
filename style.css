@@ -15,8 +15,123 @@ html {
 
 /* Header styles */
 
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: hsl(30, 30%, 96%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header,
+header button {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+}
+
+header img {
+  height: 3.125rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+header nav ul li a {
+  color: hsl(38, 27%, 6%);
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  opacity: 0.9;
+}
+
+header nav ul li a:active {
+  opacity: 0.5;
+}
+
+header button {
+  background-color: hsl(31, 32%, 36%);
+  color: hsl(30, 30%, 96%);
+  border: none;
+  border-radius: 20px;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container p {
+  color: hsl(38, 27%, 6%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* Body styles */
+
+main h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+  color: hsl(30, 30%, 96%);
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: center / cover no-repeat url("./images/hero-bg.jpg");
+  padding: 10rem 5rem;
+}
 
 /* Footer styles */
 
 /* Media queries */
+
+@media only screen and (max-width: 924px) {
+  header {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 698px) {
+  header {
+    justify-content: space-between;
+  }
+
+  header p {
+    display: none;
+  }
+
+  header nav .nav-links {
+    display: none;
+  }
+
+  header nav .sign-up-button li {
+    padding-right: 0;
+  }
+}
