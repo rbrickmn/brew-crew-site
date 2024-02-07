@@ -77,6 +77,12 @@ header button {
   font-weight: 600;
 }
 
+header svg {
+  display: none;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
@@ -139,6 +145,7 @@ article {
 .about-section article {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .about-section article img {
@@ -191,6 +198,10 @@ article {
   header nav .sign-up-button li {
     padding-right: 0;
   }
+
+  header svg {
+    display: initial;
+  }
 }
 
 @media only screen and (max-width: 1510px) {
@@ -206,13 +217,13 @@ article {
   }
 
   .article-1 {
-    background: center / cover no-repeat url("./images/article-1-green-bg.jpg");
+    background: center / cover no-repeat url("./images/article-1-green-2-bg.jpg");
     padding: 5rem 1rem;
     text-align: center;
   }
 
   .article-2 {
-    background: center / cover no-repeat url("./images/article-2-green-bg.jpg");
+    background: center / cover no-repeat url("./images/article-2-green-2-bg.jpg");
     padding: 5rem 1rem;
     text-align: center;
     border-radius: 15px;
