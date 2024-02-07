@@ -94,10 +94,30 @@ header button {
 
 /* Body styles */
 
-main h1 {
+main h1,
+main h2 {
   font-family: Poppins, sans-serif;
+}
+
+main h1 {
   font-size: 5rem;
   color: hsl(30, 30%, 96%);
+}
+
+main h2 {
+  font-size: 2rem;
+  color: hsl(31, 32%, 36%);
+  margin-bottom: 1.2rem;
+}
+
+main p {
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;
+  color: hsl(38, 27%, 6%);
+}
+
+article {
+  margin-bottom: 3rem;
 }
 
 .hero-section {
@@ -106,6 +126,43 @@ main h1 {
   align-content: center;
   background: center / cover no-repeat url("./images/hero-bg.jpg");
   padding: 10rem 5rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.about-section article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section article img {
+  max-height: 25rem;
+  border-radius: 15px;
+}
+
+.article-text {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.article-1 {
+  border-radius: 15px;
+}
+
+.article-2 .article-text {
+  text-align: right;
+}
+
+.article-2 .article-text p {
+  padding-right: 0;
 }
 
 /* Footer styles */
@@ -133,5 +190,53 @@ main h1 {
 
   header nav .sign-up-button li {
     padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1510px) {
+  main p {
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  main h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .article-1 {
+    background: center / cover no-repeat url("./images/article-1-green-bg.jpg");
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .article-2 {
+    background: center / cover no-repeat url("./images/article-2-green-bg.jpg");
+    padding: 5rem 1rem;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .article-2 p {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  article img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-section {
+    padding: 0;
+  }
+
+  .article-1 {
+    border-radius: 0;
+  }
+  .article-2 {
+    border-radius: 0;
   }
 }
